@@ -1,0 +1,12 @@
+{
+  "name": "monorepo-test",
+  "workspaces": [
+    "api",
+    "cli",
+    "frontend"
+  ],
+  "dependencies": {
+    "yarn": "^1.22.10",
+    "~": "link:./"
+  }
+}

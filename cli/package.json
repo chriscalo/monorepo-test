@@ -1,0 +1,6 @@
+{
+  "name": "cli",
+  "dependencies": {
+    "commander": "^7.0.0"
+  }
+}

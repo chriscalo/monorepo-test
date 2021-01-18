@@ -2,8 +2,13 @@ const express = require("express");
 
 const api = express();
 
+// log all requests
+api.use((req, res, next) => {
+  console.log(`[api] ${req.method} ${req.url}`);
+  next();
+});
+
 api.get("/", (req, res) => {
-  console.log("GET /");
   res.send("Hello, World!");
 });
 

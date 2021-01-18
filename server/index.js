@@ -16,7 +16,7 @@ async function main() {
     findPort(5000),
   ]);
   
-  console.log("ports", {
+  console.table({
     PORT,
     FE_PORT,
     API_PORT,

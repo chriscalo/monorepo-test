@@ -8,7 +8,8 @@
     "express": "^4.17.1",
     "express-start": "^0.3.0",
     "http-proxy-middleware": "^1.0.6",
-    "pretty-error": "^3.0.3"
+    "pretty-error": "^3.0.3",
+    "~": "link:./"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

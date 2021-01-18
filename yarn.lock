@@ -2377,6 +2377,7 @@ __metadata:
   dependencies:
     express: ^4.17.1
     nodemon: ^2.0.7
+    ~: "link:./"
   languageName: unknown
   linkType: soft
 
@@ -3363,6 +3364,7 @@ __metadata:
     execa: ^5.0.0
     nodemon: ^2.0.7
     pretty-error: ^3.0.3
+    ~: "link:./"
   languageName: unknown
   linkType: soft
 
@@ -5205,6 +5207,7 @@ __metadata:
     sass: ^1.26.5
     sass-loader: ^8.0.2
     vue: ^3.0.0
+    ~: "link:./"
   languageName: unknown
   linkType: soft
 
@@ -9702,6 +9705,7 @@ resolve@^1.10.0:
     http-proxy-middleware: ^1.0.6
     nodemon: ^2.0.7
     pretty-error: ^3.0.3
+    ~: "link:./"
   languageName: unknown
   linkType: soft
 
@@ -11574,8 +11578,32 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
+"~@link:./::locator=api%40workspace%3Aapi":
+  version: 0.0.0-use.local
+  resolution: "~@link:./::locator=api%40workspace%3Aapi"
+  languageName: node
+  linkType: soft
+
+"~@link:./::locator=cli%40workspace%3Acli":
+  version: 0.0.0-use.local
+  resolution: "~@link:./::locator=cli%40workspace%3Acli"
+  languageName: node
+  linkType: soft
+
+"~@link:./::locator=frontend%40workspace%3Afrontend":
+  version: 0.0.0-use.local
+  resolution: "~@link:./::locator=frontend%40workspace%3Afrontend"
+  languageName: node
+  linkType: soft
+
 "~@link:./::locator=monorepo-test%40workspace%3A.":
   version: 0.0.0-use.local
   resolution: "~@link:./::locator=monorepo-test%40workspace%3A."
+  languageName: node
+  linkType: soft
+
+"~@link:./::locator=server%40workspace%3Aserver":
+  version: 0.0.0-use.local
+  resolution: "~@link:./::locator=server%40workspace%3Aserver"
   languageName: node
   linkType: soft

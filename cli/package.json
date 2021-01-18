@@ -4,7 +4,8 @@
     "cli": "nodemon ./index.js"
   },
   "dependencies": {
-    "commander": "^7.0.0"
+    "commander": "^7.0.0",
+    "~": "link:./"
   },
   "devDependencies": {
     "execa": "^5.0.0",

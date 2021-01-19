@@ -6,7 +6,11 @@
     "cli",
     "frontend"
   ],
+  "scripts": {
+    "start": "cli dev"
+  },
   "dependencies": {
+    "cli": "workspace:cli",
     "yarn": "^1.22.10",
     "~": "link:./"
   }

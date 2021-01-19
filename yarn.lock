@@ -3365,6 +3365,8 @@ __metadata:
     nodemon: ^2.0.7
     pretty-error: ^3.0.3
     ~: "link:./"
+  bin:
+    cli: ./index.js
   languageName: unknown
   linkType: soft
 
@@ -7434,6 +7436,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "monorepo-test@workspace:."
   dependencies:
+    cli: "workspace:cli"
     yarn: ^1.22.10
     ~: "link:./"
   languageName: unknown

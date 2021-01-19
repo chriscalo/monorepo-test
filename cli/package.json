@@ -3,6 +3,7 @@
   "scripts": {
     "cli": "nodemon ./index.js"
   },
+  "bin": "./index.js",
   "dependencies": {
     "commander": "^7.0.0",
     "~": "link:./"

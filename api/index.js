@@ -12,8 +12,8 @@ api.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
-api.listen(process.env.PORT || 9000, function onstart() {
+api.listen(process.env.PORT, function onstart() {
   const { port } = this.address();
-  console.log(`App listening at ${port}`);
+  console.log(`API listening on port ${port}`);
   console.log(`Press Ctrl+C to quit.`);
 });

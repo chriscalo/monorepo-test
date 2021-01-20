@@ -31,7 +31,6 @@ async function main() {
   exec("yarn workspace api dev", {
     env: { PORT: API_PORT },
   });
-  
   server.use("/api", createProxyMiddleware({
     target: `http://localhost:${API_PORT}`,
     pathRewrite: {

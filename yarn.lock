@@ -9702,6 +9702,7 @@ resolve@^1.10.0:
   version: 0.0.0-use.local
   resolution: "server@workspace:server"
   dependencies:
+    chalk: ^4.1.0
     execa: ^5.0.0
     express: ^4.17.1
     express-start: ^0.3.0

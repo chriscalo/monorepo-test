@@ -1,26 +1,21 @@
 const express = require("express");
+const chalk = require("chalk");
 const { findPort } = require("express-start/find-port");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const { exec } = require("./util.js");
 
 const server = express();
 
-const registry = {};
+const INFO = chalk.blue.bold.inverse` INFO `;
 
 async function main() {
   findPort(process.env.PORT || 8000).then(function (PORT) {
-    registry.main = PORT;
-    
     server.listen(PORT, function onstart() {
       const { port } = this.address();
       console.log(``);
-      console.log(`Server running at http://localhost:${port}`);
+      console.log(`${INFO} Server running at http://localhost:${port}`);
       console.log(`Press Ctrl+C to quit.`);
       console.log(``);
-    });
-    
-    console.table({
-      PORT,
     });
   });
   
